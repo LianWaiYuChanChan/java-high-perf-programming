@@ -130,7 +130,10 @@ public class ReadWriteLockUsage {
      * Performance constraint:At least 100 add one operation per seconds.
      * One important info is that the operation will go into database.
      * <p>
-     * Result: 8829/0.5.    17658 add one per seconds.
+     *
+     * Solution:
+     * 1. Use ReadWriteLock. A little weird. Result: 8829/0.5.    17658 add one per seconds.
+     * 2. Other solution?
      */
     public void solutionUseReadWriteLock() throws InterruptedException {
         //Prepare thread
